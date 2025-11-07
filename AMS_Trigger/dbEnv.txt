@@ -1,6 +1,7 @@
 {
 'tst':
-        {'SQLServer': 'phc-sales01-tst-sql.database.windows.net', 'SQLUser': 'DSTASDBUser', 'SQLPassword': 'XwSNHbubuL2tQ9Dz2hxQsEMM'},
+        {'SQLServer': 'phc-sales01-tst-sql.database.windows.net', 'SQLUser': 'DSTASDBUser', 'SQLPassword': 'xxxx'},
 'prd':
-        {'SQLServer': 'phc-sales01-prd-sql.database.windows.net', 'SQLUser': 'DSTASDBUser', 'SQLPassword':'tSiegUqL6332mfMK2zxO7pgz'}
+        {'SQLServer': 'phc-sales01-prd-sql.database.windows.net', 'SQLUser': 'DSTASDBUser', 'SQLPassword':'xxxxx'}
 }
+
