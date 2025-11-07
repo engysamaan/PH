@@ -44,12 +44,12 @@ def SendEmail(filename: str, subject: str, ToEmail: str, body: str):
 	## if No New Agreemts send empty email
 
 	url = "https://sendsmtpmail.azurewebsites.net/api/Email/SendMailToMultipleRecipients"
-	payload = {'FromEmail': 'coramssupport@parker.com',
+	payload = {'FromEmail': 'coramssupport@xxxx.com',
 	           'ToEmail': f'{ToEmail}',
 	           'Subject': f'{subject}',
 	           'Body': f'{body}'}
 	headers = {
-			'Ocp-Apim-Subscription-Key': '86265920ae2644009a598ca702bfac56',
+			'Ocp-Apim-Subscription-Key': 'xxxxx',
 			}
 
 	all_attachments = os.listdir(output)
@@ -182,7 +182,7 @@ def runDocuSignApi(environment: str):
 
 			updateProcessTable(profile_id[1], current_status='XML Format Completed', new_status='Error')
 
-			SendEmail(filename=file.name, subject='DocuSign - Send XML Error',ToEmail='coramssupport@parker.com',
+			SendEmail(filename=file.name, subject='DocuSign - Send XML Error',ToEmail='coramssupport@company.com',
 			          body=f'<html><h3>The xml file for ProfileID: {file.name} was not sent to DocuSign successfully.'
 			               f'<br>Status: {response.status} {response.reason}\n Body:'
 			               f' {response.data.decode("utf-8")}'
@@ -224,7 +224,7 @@ failed_agreements = check_failed_agreements()
 
 if len(failed_agreements) == 0 :
 	## If no failed agreement found then send success email to support with agreements attached
-	SendEmail(filename=None, subject='XML Completed',ToEmail='coramssupport@parker.com',
+	SendEmail(filename=None, subject='XML Completed',ToEmail='coramssupport@xxx.com',
 			  body=f'<html><h3>'
 				   f'Attached all the XML agreements that have been successfully generate.'
 				   f'<br><br> Environment: {environment}'
@@ -232,7 +232,7 @@ if len(failed_agreements) == 0 :
 else:
 	## if any agreement was found then sned email to engy and support with all success agreements attachments and list of failed agreements
 	print('Error Email Sent\n')
-	SendEmail(filename='codeError', subject='XML Builder Failed',ToEmail='coramssupport@parker.com;engy.tawadros@parker.com;amy.metzger@parker.com',
+	SendEmail(filename='codeError', subject='XML Builder Failed',ToEmail='coramssupport@xxx.com;engy.tawadros@xxx.com;amy.metzger@xxxx.com',
 			  body=f'<html><h3>'
 				   f'XML Builder failed to generate these agreements: {failed_agreements} and only the attached agreements was succeeded'
 				   f'<br><br> Environment: {environment}'
@@ -246,3 +246,4 @@ print('DocuSign API Is Fired')
 print('####################################')
 print('            * SUCCESSES *            ')
 print('####################################')
+
