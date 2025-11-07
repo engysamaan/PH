@@ -90,26 +90,26 @@ except Exception as error:
 class DemoEnvironment(object):
     clm_base_url = "https://apiuatna11.springcm.com"
     esign_base_url = "https://demo.docusign.net/restapi"
-    ds_account_id = "a56f6983-f94a-4b53-b199-4184b7957b69"
+    ds_account_id = "xxx-xxx-xxx-xx-xxxxx"
     endpoint_instance = "uatna11"
-    iss = "f9d6da26-08b7-4117-abe1-7c9a53fd60df"
-    sub = "50c52360-1d66-47bc-a4c2-3259de121080"
+    iss = "xxxxxxx-"
+    sub = "xxxxxxxx"
     aud = "account-d.docusign.com"
     scope = tuple(['signature', 'impersonation', 'spring_read', 'spring_write'])
-    private_key = "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEA+GAD+19n+MX/xAaMNwYn7jcRrtKXh+u1t5/AZSS6NVjfAHjAMERXhywQBoVuR8rEvOpcxMzSWIViZMXjK+rYNtoIJVbEBgnACU8ZmMM5WOHYx4F03JVGzjGLAtApFTSuw+BWPxc27nPufSSDS2/K6o3SQbrFg1OLdjwu1IktIxTO3ZMiSBPu+oyIDjhN832gGm0+hN78UACqY2ovB+SLG1a3SCT8De9P4eZ9VJMLk0xPobgGnVqtbtrE62L/+YmZ2OBliiQDcnhUhw3fYw+e00v2q4eV3zRvLMMBI0DU6kdEubttHA2TE2AmjE4ECYhHgSNj1vnlkfAzm+CUMAqfXwIDAQABAoIBAAfAcpj3oYNJjEthUbwtGTWKStpkJwFbLiDpmUcCCwm7mO7z1dO4nlHqryL094jBrFUIReLvUMIdT5sJ9HNPcULgMfbjkVsHsBJz575omwAwjeQUINvHKoTCIq69mAdzmhMk8kW/z+57RP5rRraMNtunl3m6F/LN7bSMxk1kOdNpaBn/l2cMwPVmAt2LsfTOcs5z1cUMZG/CWuIoMOnrSRxNYgfgjhvcBCMMwx0iX+utBAQFf4s+2OpgvAlYI1XJvNLWxWD8coXoei6Do3K6d80AI1BIe8TRZeaWRfvz6KzqiKAva55WLD5+5hQguQQfKN2Ff2ZRNmUZs2HlbtV4g7ECgYEA/FDJTtcDgpMy9zSmz13rSlQFEMOZkMnmR9QqV2XoQeeD+E//2Euvz2t4679ORAYCGZZ3MB1ykOxtpyKWSiBmDUuilpLYke/kZXuvSNMyhGcHSrHDAWgQrd5BvtffVO5Rp24y4HqjPa6bTunTAfArATRKqEzDDcLagNgVLUHlIdcCgYEA/AB/qBtCvHyBaI3aJiJf8ckUhQ4sbXt9mwrSa2gWSk4rhFzGS8hj5gIeMozloHiSUPLO2PW1E5HqJfW8IR5eHzdCCV7ZDz2qU3KsUQcgJa276KzSEMkZDTrbs89v1vEE91gxlqYMHcoazf5/RUdgNHen1JHfV8hDnwpIOCIEzbkCgYA523yN65gOdRqWvSgTHQI7RRD0SyYHoYSArBIZgHDFzATjB9UvEAv8kDRmOrQDvSz2GR6zlc0TlmN+k9vKm6tLGTDrPjkTHeNNshL7rBJFciql4iVJSUep1vFUhcPcgdmPfyGDgBu2pTdP3SZZp2z1FbyY4yFHIotgSCxy+E1GeQKBgQDuOIZ04vhOeCBZNyeOvxYV2fFU6pYjFQcjBrLtp+LScVz/7jfiMdgF+eCUBs+XyAMBFNdnD7cSffBr3AXxBOUS+0io1Qm6N6AI7LFqk6LXG4o0JRMbnQ7ai9Ze/2yJMyRvseaGtAdmLcTzEG89jYCreKWl9BO+xujtsmmc7sO9uQKBgFlI3K8B9cQUnWPAWUf7KofBeL6AGI/18CczMIt0fCVulSKbdNcyRRO74oD/l6N6+ZQryMAgNQZmaQvv2luTHRIvNVtVyyoOn3U6oYWiUBltiuW2vIRNDlDpKlNueWAHVlkydlcjhxYKFPAQ8it8xXHx+VfdtxM/LFcp/B6i1gPA\n-----END RSA PRIVATE KEY-----"
-
+    private_key = "-----BEGIN RSA PRIVATE KEY-----\"
 
 class ProductionEnvironment(object):
     clm_base_url = "https://apina11.springcm.com"
     esign_base_url = "https://na4.docusign.net/restapi"
-    ds_account_id = "c812fd83-a0df-45bf-b592-50f634836136"
+    ds_account_id = "xxx-xxx-xxx-xxx-xxxxxx"
     endpoint_instance = "apina11"
-    iss = "f9d6da26-08b7-4117-abe1-7c9a53fd60df"
-    sub = "f1f29c8b-6a26-4000-ad8b-a0d99a0357be"
+    iss = "xxxxxx"
+    sub = "xxxxxx"
     aud = "account.docusign.com"
     scope = tuple(['signature', 'impersonation', 'spring_read', 'spring_write'])
-    private_key = "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEA+GAD+19n+MX/xAaMNwYn7jcRrtKXh+u1t5/AZSS6NVjfAHjAMERXhywQBoVuR8rEvOpcxMzSWIViZMXjK+rYNtoIJVbEBgnACU8ZmMM5WOHYx4F03JVGzjGLAtApFTSuw+BWPxc27nPufSSDS2/K6o3SQbrFg1OLdjwu1IktIxTO3ZMiSBPu+oyIDjhN832gGm0+hN78UACqY2ovB+SLG1a3SCT8De9P4eZ9VJMLk0xPobgGnVqtbtrE62L/+YmZ2OBliiQDcnhUhw3fYw+e00v2q4eV3zRvLMMBI0DU6kdEubttHA2TE2AmjE4ECYhHgSNj1vnlkfAzm+CUMAqfXwIDAQABAoIBAAfAcpj3oYNJjEthUbwtGTWKStpkJwFbLiDpmUcCCwm7mO7z1dO4nlHqryL094jBrFUIReLvUMIdT5sJ9HNPcULgMfbjkVsHsBJz575omwAwjeQUINvHKoTCIq69mAdzmhMk8kW/z+57RP5rRraMNtunl3m6F/LN7bSMxk1kOdNpaBn/l2cMwPVmAt2LsfTOcs5z1cUMZG/CWuIoMOnrSRxNYgfgjhvcBCMMwx0iX+utBAQFf4s+2OpgvAlYI1XJvNLWxWD8coXoei6Do3K6d80AI1BIe8TRZeaWRfvz6KzqiKAva55WLD5+5hQguQQfKN2Ff2ZRNmUZs2HlbtV4g7ECgYEA/FDJTtcDgpMy9zSmz13rSlQFEMOZkMnmR9QqV2XoQeeD+E//2Euvz2t4679ORAYCGZZ3MB1ykOxtpyKWSiBmDUuilpLYke/kZXuvSNMyhGcHSrHDAWgQrd5BvtffVO5Rp24y4HqjPa6bTunTAfArATRKqEzDDcLagNgVLUHlIdcCgYEA/AB/qBtCvHyBaI3aJiJf8ckUhQ4sbXt9mwrSa2gWSk4rhFzGS8hj5gIeMozloHiSUPLO2PW1E5HqJfW8IR5eHzdCCV7ZDz2qU3KsUQcgJa276KzSEMkZDTrbs89v1vEE91gxlqYMHcoazf5/RUdgNHen1JHfV8hDnwpIOCIEzbkCgYA523yN65gOdRqWvSgTHQI7RRD0SyYHoYSArBIZgHDFzATjB9UvEAv8kDRmOrQDvSz2GR6zlc0TlmN+k9vKm6tLGTDrPjkTHeNNshL7rBJFciql4iVJSUep1vFUhcPcgdmPfyGDgBu2pTdP3SZZp2z1FbyY4yFHIotgSCxy+E1GeQKBgQDuOIZ04vhOeCBZNyeOvxYV2fFU6pYjFQcjBrLtp+LScVz/7jfiMdgF+eCUBs+XyAMBFNdnD7cSffBr3AXxBOUS+0io1Qm6N6AI7LFqk6LXG4o0JRMbnQ7ai9Ze/2yJMyRvseaGtAdmLcTzEG89jYCreKWl9BO+xujtsmmc7sO9uQKBgFlI3K8B9cQUnWPAWUf7KofBeL6AGI/18CczMIt0fCVulSKbdNcyRRO74oD/l6N6+ZQryMAgNQZmaQvv2luTHRIvNVtVyyoOn3U6oYWiUBltiuW2vIRNDlDpKlNueWAHVlkydlcjhxYKFPAQ8it8xXHx+VfdtxM/LFcp/B6i1gPA\n-----END RSA PRIVATE KEY-----"
+    private_key = "-----BEGIN RSA PRIVATE KEY-----"
 
 
 if __name__ == "__main__":
     print('AMS Configration')
+
