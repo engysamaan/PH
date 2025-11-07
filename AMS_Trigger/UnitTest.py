@@ -52,7 +52,7 @@ def SendEmail(filename: str, subject: str, ToEmail: str, body: str):
 	           'Subject': f'{subject}',
 	           'Body': f'{body}'}
 	headers = {
-			'Ocp-Apim-Subscription-Key': '86265920ae2644009a598ca702bfac56',
+			'Ocp-Apim-Subscription-Key': 'xxxxx',
 			}
 
 	all_attachments = os.listdir(output)
@@ -185,7 +185,7 @@ def runDocuSignApi(environment: str):
 
 			updateProcessTable(profile_id[1], current_status='XML Format Completed', new_status='Error')
 
-			SendEmail(filename=file.name, subject='DocuSign - Send XML Error',ToEmail='coramssupport@parker.com',
+			SendEmail(filename=file.name, subject='DocuSign - Send XML Error',ToEmail='coramssupport@xxx.com',
 			          body=f'<html><h3>The xml file for ProfileID: {file.name} was not sent to DocuSign successfully.'
 			               f'<br>Status: {response.status} {response.reason}\n Body:'
 			               f' {response.data.decode("utf-8")}'
@@ -193,7 +193,7 @@ def runDocuSignApi(environment: str):
 			               f'</h3></html>')
 		updateProcessTable(profile_id[1], current_status='XML Format Completed', new_status='Error')
 
-		SendEmail(filename=file.name, subject='DocuSign - Send XML Error(2)',ToEmail='coramssupport@parker.com',
+		SendEmail(filename=file.name, subject='DocuSign - Send XML Error(2)',ToEmail='coramssupport@xx.com',
 		          body=f'<html><h3>'
 		               f'The xml file for ProfileID: {file.name} was not sent to DocuSign successfully.'
 		               f'<br>Reason: {response.reason}'
@@ -236,13 +236,13 @@ if __name__ == '__main__':
 	# failed_agreements = check_failed_agreements()
 	#
 	# if len(failed_agreements) == 0 :
-	# 	SendEmail(filename=None, subject='XML Completed',ToEmail='coramssupport@parker.com',
+	# 	SendEmail(filename=None, subject='XML Completed',ToEmail='coramssupport@xxx.com',
 	# 			  body=f'<html><h3>'
 	# 				   f'Attached all the XML agreements that have been successfully generate.'
 	# 				   f'<br><br> Environment: dev '
 	# 				   f'</h3></html>')
 	# else:
-	# 	SendEmail(filename='codeError', subject='XML Builder Failed',ToEmail='coramssupport@parker.com;engy.tawadros@parker.com',
+	# 	SendEmail(filename='codeError', subject='XML Builder Failed',ToEmail='coramssupport@xx.com',
 	# 			  body=f'<html><h3>'
 	# 				   f'XML Builder failed to generate these agreements: {failed_agreements} and only the attached agreements was succeeded'
 	# 				   f'<br><br> Environment: dev '
@@ -265,3 +265,4 @@ if __name__ == '__main__':
 	print('####################################')
 	print('            * SUCCESSES *           ')
 	print('####################################')
+
