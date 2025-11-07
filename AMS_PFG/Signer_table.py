@@ -18,12 +18,13 @@ SELECT SignerName as DistributorContractSignerName
 from AgreementProfile
 where AgreementProfile.ProfileID = {}
 """
-SignerInformation = pd.read_sql_query(q_SignerInformation.format('Matt Pritchard',
+SignerInformation = pd.read_sql_query(q_SignerInformation.format('Matt P',
                                                                  'Vice President Filtration Group Sales',
-                                                                 'mpritchard@parker.com',
+                                                                 'xxx@parker.com',
                                                                  ProfileID), con)
 SignerInformation.index = ["SignerInformation"]
 
 print('Building "<SignerInformation>" !!!\n')
 convert2XML(SignerInformation,
             filename="xml_1.xml", mode="a")
+
