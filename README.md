@@ -65,5 +65,8 @@ No schema hard-coded → fully reusable.
 
 ---
 
-## 📂 Project Structure
+
+
+
+
 
